@@ -717,7 +717,8 @@ form ul {
   list-style-type: none;
   list-style-image: none;
   margin: 0;
-  padding: 0
+  padding: 0;
+  width: 100%;
 }
 
 fieldset {
@@ -1438,7 +1439,7 @@ header#header>.sec-nav>ul>li a.selected {
 }
 
 .travel-calendar {
-  padding: 30px 15px 0;
+  /* padding: 30px 15px 0; */
   *zoom: 1;
   clear: both;
   margin-bottom: 2em
@@ -1466,13 +1467,14 @@ header#header>.sec-nav>ul>li a.selected {
 }
 
 .travel-calendar .ui-datepicker .ui-datepicker-group {
+  border:none;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   display: inline;
   float: left;
   width: 50%;
-  padding: 0 15px;
+  /* padding: 0 15px; */
   *width: 44.79166666666667%;
   *padding: 014.947916666666666px;
   position: relative
@@ -1498,12 +1500,12 @@ header#header>.sec-nav>ul>li a.selected {
   position: absolute;
   top: 50%;
   left: -20px;
-  background: url(../images/cal-left.png) no-repeat
+  background: url(../images/cal-left.svg) no-repeat
 }
 
 .travel-calendar .ui-datepicker .ui-datepicker-header .ui-datepicker-prev:hover,
 .travel-calendar .ui-datepicker .ui-datepicker-header .ui-datepicker-prev:active {
-  background-image: url(../images/cal-left-hover.png)
+  background-image: url(../images/cal-left.svg)
 }
 
 @media screen and (max-width:1065px) {
@@ -1516,12 +1518,12 @@ header#header>.sec-nav>ul>li a.selected {
   position: absolute;
   top: 50%;
   right: -20px;
-  background: url(../images/cal-right.png) no-repeat
+  background: url(../images/cal-right.svg) no-repeat
 }
 
 .travel-calendar .ui-datepicker .ui-datepicker-header .ui-datepicker-next:hover,
 .travel-calendar .ui-datepicker .ui-datepicker-header .ui-datepicker-next:active {
-  background-image: url(../images/cal-right-hover.png)
+  background-image: url(../images/cal-right.svg)
 }
 
 @media screen and (max-width:1065px) {
@@ -1689,20 +1691,23 @@ header#header>.sec-nav>ul>li a.selected {
 }
 
 .inline-travel-options {
-  text-align: center
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .inline-travel-options li {
-  display: inline-block
+  display: inline-block;
+  width: 100%;
 }
 
 .inline-travel-options li.with-select {
-  min-width: 100px
+  /* min-width: 100px */
 }
 
 .inline-travel-options li input {
   height: 30px;
-  float: left
+  float: left;
+  width: 100% !important;
 }
 
 @media only screen and (max-width:480px) {
@@ -1861,12 +1866,12 @@ header#header>.sec-nav>ul>li a.selected {
 }
 
 .datepicker .dp-pag-pop-up-link.long-prev {
-  background: url(../images/cal-left.png) no-repeat;
-  left: -20px
+  background: url(../images/cal-left.svg) no-repeat;
+  left: 0px;
 }
 
 .datepicker .dp-pag-pop-up-link.long-prev:hover {
-  background-image: url(../images/cal-left-hover.png)
+  background-image: url(../images/cal-hover.svg)
 }
 
 @media screen and (max-width:1065px) {
@@ -1876,12 +1881,12 @@ header#header>.sec-nav>ul>li a.selected {
 }
 
 .datepicker .dp-pag-pop-up-link.long-next {
-  background: url(../images/cal-right.png) no-repeat;
-  right: -20px
+  background: url(../images/cal-right.svg) no-repeat;
+  right: 0px
 }
 
 .datepicker .dp-pag-pop-up-link.long-next:hover {
-  background-image: url(../images/cal-right-hover.png)
+  background-image: url(../images/cal-right.png)
 }
 
 @media screen and (max-width:1065px) {

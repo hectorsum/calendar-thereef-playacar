@@ -39,7 +39,9 @@
     body {
       height: 100%;
     }
-
+    .inline-travel-options .full-select {
+      text-align-last: center;
+    }
     .flag {
       width: 14px;
     }
@@ -129,7 +131,7 @@
       position: relative;
       background: #FFFFFF url('../../hotel_images_fastlink/152/152_UBI_001.jpg') no-repeat;
       background-position: center;
-      background-size: contain;
+      background-size: 100% 100%;
     }
 
     @media screen and (max-width: 768px) {
@@ -139,7 +141,7 @@
         position: relative;
         background: #FFFFFF url('../../hotel_images_fastlink/152/152_UBIT_001.jpg') no-repeat;
         background-position: center;
-        background-size: contain;
+        background-size: 100% 100%;
       }
 
 
@@ -702,21 +704,16 @@
       </div>
       <div class="travel-options variable">
         <div class="travel-options-left">
-          <div class="row d-flex justify-content-center">
-            <div class="col-6 col-sm-6 col-md-auto col-lg-auto col-xl-auto list-book with-airport">
+          <div class="row col-12 col-md-12 m-0 p-0">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 list-book with-airport">
               <ul class="inline-travel-options">
                 <li class="with-airport">
-                  <div class="ui-front">
-                    <strong class="static-gray hidden-sm">From:</strong>
-                    <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
-                    <input style="width: auto;" class="airport-input" type="text" placeholder="Departing Airport"
-                      value="" />
-                    <input type="hidden" name="airport" id="airport" value="" />
-                  </div>
+                  <strong class="static-gray">From:</strong>
+                  <input style="width: auto;" class="airport-input" type="text" placeholder="Departing Airport" value="" />
                 </li>
               </ul>
             </div>
-            <div class="col-6 col-sm-6 col-md-auto col-lg-auto col-xl-auto list-book with-airport">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 list-book with-airport">
               <ul class="inline-travel-options ">
                 <li class="with-airport">
                   <strong class="static-gray">To:</strong>
@@ -727,66 +724,60 @@
                 <input type="hidden" name="airportTo" id="airportTo" value="CUN" />
               </ul>
             </div>
-            <div class="col-6 col-sm-6 col-md-auto col-lg-auto col-xl-auto  list-book">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 list-book">
               <ul class="inline-travel-options">
-                <li class="promo-items">
-                  <ul class="pscript">
-                    <li class="with-select">
-                      <strong class="static-gray">Adult(s):</strong>
-                      <select class="select-choices full-select " name="adults" id="adults" style="width: auto;">
-                        <option value="2" selected>2 </option>
-                        <option value="1">1 </option>
-                        <option value="2">2 </option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                      </select>
-                    </li>
-                  </ul>
-            </div>
-            <div class="col-6 col-sm-6 col-md-auto col-lg-auto col-xl-auto  list-book">
-              <ul class="inline-travel-options">
-                <li class="promo-items">
-                  <ul class="pscript">
-                    <li class="with-select">
-                      <strong class="static-gray">Children:</strong>
-                      <select class="select-choices full-select " name="child" id="child" style="width: auto;">
-                        <option selected value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                      </select>
-                  </ul>
+                <li class="with-select">
+                  <strong class="static-gray">Adult(s):</strong>
+                  <select class="select-choices full-select " name="adults" id="adults" style="width: auto;">
+                    <option value="2" selected>2 </option>
+                    <option value="1">1 </option>
+                    <option value="2">2 </option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select>
                 </li>
               </ul>
             </div>
-            <div class="col-6 col-sm-6 col-md-auto col-lg-auto col-xl-auto  list-book">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 list-book">
               <ul class="inline-travel-options">
-                <li class="promo-items">
-                  <ul class="pscript">
-                    <li class="with-select">
-                      <strong class="static-gray">Room(s):</strong>
-                      <select class="select-choices full-select " id="rooms" type="hidden" name="rooms"
-                        style="width: auto;">
-                        <option value="1">1 </option>
-                        <option value="2">2 </option>
-                        <option value="3">3 </option>
-                      </select>
-                    </li>
-                  </ul>
+                <li class="with-select">
+                  <strong class="static-gray">Children:</strong>
+                  <select class="select-choices full-select " name="child" id="child" style="width: auto;">
+                    <option selected value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                  </select>
                 </li>
+              </ul>
             </div>
-            <div class="col-6 col-sm-6 col-md-auto col-lg-auto col-xl-auto list-book">
+          </div>
+          <div class="row col-md-12 m-0 p-0">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 list-book">
+              <ul class="inline-travel-options">
+                <li class="with-select">
+                  <strong class="static-gray">Room(s):</strong>
+                  <select class="select-choices full-select " id="rooms" type="hidden" name="rooms"
+                    style="width: auto;">
+                    <option value="1">1 </option>
+                    <option value="2">2 </option>
+                    <option value="3">3 </option>
+                  </select>
+                </li>
+              </ul>
+            </div>
+            <!-- <div class="col-3 col-sm-6 col-md-auto col-lg-auto col-xl-auto list-book">
               <ul class="inline-travel-options">
                 <li class="promo-items 
  agency_hotel
@@ -795,8 +786,8 @@
                     value="" />
                 </li>
               </ul>
-            </div>
-            <div class="col-6 col-sm-6 col-md-auto col-lg-auto col-xl-auto list-book">
+            </div> -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 list-book">
               <ul class="inline-travel-options">
                 <li class="promo-items">
                   <input type="text" name="PC" id="PC" class="promo-input defaultText" title="Promotional Code"
@@ -804,13 +795,10 @@
                 </li>
               </ul>
             </div>
-            <div class="col-6 col-sm-6 col-md-auto col-lg-auto col-xl-auto  list-book">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 list-book">
               <ul class="inline-travel-options">
                 <li class="promo-items">
-                  <ul class="advanced_search">
-                    <li class="with-select">
-                      <strong class="static-gray">Airline:</strong>
-                      <select class="select-choices full-select that-select1 djs" id="airline" name="airline" value=""
+                  <select class="select-choices full-select" id="airline" name="airline" value=""
                         style="width: auto;">
                         <option value="">Airline</option>
                         <option value="VW">Aeromar Airlines</option>
@@ -876,13 +864,11 @@
                         <option value="Y4">Volaris</option>
                         <option value="WS">West Jet</option>
                         <option value="SE">XL Airways France</option>
-                      </select>
-                    </li>
-                  </ul>
+                    </select>
                 </li>
               </ul>
             </div>
-            <div class="col-6 col-sm-6 col-md-auto col-lg-auto col-xl-auto  list-book">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 list-book">
               <ul class="inline-travel-options">
                 <li class="promo-items">
                   <ul class="advanced_search">
@@ -899,7 +885,9 @@
                 </li>
               </ul>
             </div>
-            <div class="col-6 col-sm-6 col-md-auto col-lg-auto col-xl-auto  list-book">
+          </div>
+          <div class="row col-md-12 m-0 p-0">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 list-book">
               <ul class="inline-travel-options">
                 <li class="promo-items">
                   <ul class="advanced_search">
