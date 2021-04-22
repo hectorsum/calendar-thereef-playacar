@@ -49,6 +49,9 @@
 }
 
 @media screen and (max-width:991px) {
+  #next-step.enabled{
+    width: 100% !important;
+  }
   .breadcrumb-item::after {
     padding-left: 13px !important;
     padding-right: 9px !important
@@ -718,7 +721,7 @@ form ul {
   list-style-image: none;
   margin: 0;
   padding: 0;
-  width: 100%;
+  /* width: 100%; */
 }
 
 fieldset {
@@ -747,8 +750,8 @@ select:focus {
 
 @media screen and (min-width:729px) {
   .travel-cal-legend ul li .legend {
-    margin-left: 35px;
-    margin-top: 10px
+    /* margin-left: 35px;
+    margin-top: 10px */
   }
 }
 
@@ -1752,7 +1755,7 @@ header#header>.sec-nav>ul>li a.selected {
 .travel-options {
   margin-top: 13px;
   margin-bottom: 25px;
-  padding: 10px;
+  /* padding: 10px; */
   background: #eee
 }
 
@@ -1867,7 +1870,7 @@ header#header>.sec-nav>ul>li a.selected {
 
 .datepicker .dp-pag-pop-up-link.long-prev {
   background: url(../images/cal-left.svg) no-repeat;
-  left: 0px;
+  left: 5px;
 }
 
 .datepicker .dp-pag-pop-up-link.long-prev:hover {
@@ -1882,7 +1885,7 @@ header#header>.sec-nav>ul>li a.selected {
 
 .datepicker .dp-pag-pop-up-link.long-next {
   background: url(../images/cal-right.svg) no-repeat;
-  right: 0px
+  right: 5px
 }
 
 .datepicker .dp-pag-pop-up-link.long-next:hover {

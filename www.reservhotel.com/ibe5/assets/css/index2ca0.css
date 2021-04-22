@@ -9,9 +9,9 @@ body {
 
 @media screen and (max-width:768px) {
   .inline-travel-options {
-    margin-bottom: 15px
+    margin-bottom: 0px;
   }
-
+  
   .pscript {
     width: 100%
   }
@@ -32,6 +32,7 @@ body {
   align-items: center;
   justify-content: center;
   /* margin-bottom: -47.9px; */
+  margin-bottom: -34px;
   width: 100% !important;
   margin-left: 0 !important;
   margin-top: 7px;
@@ -103,7 +104,7 @@ body {
   position: relative;
   z-index: 0;
   text-align: center;
-  /* margin-bottom: -55px; */
+  margin-bottom: -55px;
   text-transform: uppercase
 }
 
@@ -198,10 +199,10 @@ body {
 
 .sec-nav>ul>li a {
   font-family: firasans-regular;
-  font-size: 12.12px;
+  font-size: 15px;
   text-decoration: none;
   color: #fff;
-  padding: 17px 16px;
+  padding: 16px 32px;
   display: block;
   background: #b1aeae;
   text-decoration: uppercase
@@ -393,7 +394,7 @@ body {
     width: 90%;
     border-radius: 2px !important;
     padding: 6px;
-    margin-bottom: 30px !important;
+    margin-bottom: 10px !important;
     margin-left: 33%;
   }
 
@@ -421,12 +422,12 @@ body {
   .travel-cal-legend {
     width: 100%;
     /* margin-left: 14.5%; */
-    height: 100%;
+    height: 85px;
     display: flex;
     justify-content: center;
     align-items: center;
     /* padding-left: 15%; */
-    /* margin-bottom: -62px */
+    margin-bottom: -30px;
   }
   .travel-cal-legend ul {
     /* text-align: left !important; */
@@ -436,7 +437,7 @@ body {
   }
 
   .travel-cal-legend ul li {
-    padding-left: 14px;
+    /* padding-left: 14px; */
     padding-right: 0;
     width: 151px
   }
@@ -472,7 +473,7 @@ body {
 
   .travel-options {
     border-top: 2px solid #5d5b5b;
-    padding-top: 7% !important;
+    /* padding-top: 7% !important; */
     margin-top: 4% !important;
     margin-left: 0% !important;
     width: 100% !important
@@ -516,7 +517,7 @@ body {
 
 .travel-calendar .reset {
   text-align: center;
-  margin-bottom: -2.3em;
+  margin-bottom: -2.6em;
   z-index: 2;
   position: relative;
   width: 90%;
@@ -542,7 +543,7 @@ body {
   font-weight: lighter;
   color: #aa964c;
   text-decoration: none;
-  font-size: 12.1px;
+  font-size: 15px;
   -webkit-transition: all .2s linear;
   -moz-transition: all .2s linear;
   -o-transition: all .2s linear;
@@ -804,7 +805,7 @@ td.unavail2 a,
 }
 
 .travel-options-left {
-  margin-top: 3%;
+  margin-top: 6%;
   float: left;
   position: relative;
   width: 100%;
@@ -812,10 +813,12 @@ td.unavail2 a,
 }
 
 .travel-options-right {
-  margin-top: 4%;
+  /* margin-top: 4%; */
   position: relative;
   float: left;
   width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 #content {
@@ -834,7 +837,12 @@ td.unavail2 a,
 
 .travel-cal-legend ul li {
   font-family: firasans-regular;
-  font-size: 12px
+  font-size: 15px;
+  min-width: 160px;
+  min-height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .travel-cal-legend ul li .legend.unavail-blk {
@@ -935,7 +943,7 @@ textarea {
 #next-step {
   font-family: firasans-medium;
   font-size: 18.2px;
-  width: 135px;
+  /* width: 135px; */
   height: 55px;
   color: #fff;
   padding: 10px 14px;
@@ -950,7 +958,8 @@ textarea {
   font-weight: 400;
   border-radius: 1px;
   line-height: 21px;
-  height: auto
+  height: auto;
+  width: 100%;
 }
 
 #next-step.enabled:hover {
@@ -959,6 +968,10 @@ textarea {
 }
 
 @media only screen and (max-width:480px) {
+  .sec-nav>ul>li a{
+    padding: 16px 32px;
+    font-size: 12px;
+  }
   .inline-travel-options li {
     display: block;
     margin-bottom: 10px;
@@ -1044,6 +1057,7 @@ textarea {
 .submit {
   text-align: right;
   margin:0;
+  margin-bottom: 1rem;
 }
 
 .last-day-calendar {
@@ -1121,6 +1135,7 @@ body {
   .submit {
     /* margin-left: 15px; */
     margin:0;
+    margin-bottom: 1rem;
   }
 
   .lowest-rate-wrap .lowest-rate:before {
@@ -1236,6 +1251,9 @@ input[type=text] {
   .datepicker .dp-pag-pop-up-link {
     top: 4px !important
   }
+  .travel-calendar .reset {
+    margin-bottom: -2.2em;
+  }
 }
 
 @media screen and (max-width:692px) {
@@ -1261,8 +1279,9 @@ input[type=text] {
 @media screen and (max-width:463px) {
   .travel-cal-legend {
     margin-left: 0%;
-    height: 147px;
+    height: 100px;
     /* margin-bottom: -119px; */
+    margin-bottom: -34px;
     width: 100%
   }
 
@@ -1278,5 +1297,10 @@ input[type=text] {
 @media screen and (max-width:430px) {
   .datepicker .dp-pag-pop-up-link {
     top: .5% !important
+  }
+}
+@media screen and (max-width:380px) {
+  .sec-nav>ul>li a{
+    /* padding: 10px 20px; */
   }
 }
