@@ -1,0 +1,95 @@
+.travel-options{
+  padding: 15px;
+}
+.sec-nav>ul>li a{
+  font-size: 12.12px;
+  text-decoration: none;
+  color: #fff;
+  padding: 17px 16px;
+  display: block;
+}
+.moreflightbtn a, #next-step.enabled, #next-step-2.enabled, #ch_submit, .reglog, .continue_btn{
+  min-width: 135px;
+}
+.travel-options-left ul.inline-travel-options li input, .travel-options-left ul.inline-travel-options li>strong, .travel-options-left ul.inline-travel-options li>div{
+  min-width: initial;
+}
+.travel-options-left{
+  width: 66%;
+  margin-top: 3%;
+  margin-left: 11%;
+}
+.travel-options-right{
+  width: 11%;
+  margin-top: 4%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.travel-options-right .submit{
+  margin: 0;
+}
+.inline-travel-options{
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 1200px){
+  .sec-nav{
+    margin-top: 25px;
+  }
+  .sec-nav>ul>li a{
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+    padding: 16px 32px;
+    display: block;
+  }
+  .travel-options{
+    padding: 15px 0;
+  }
+  .travel-options-right{
+    margin-top: 0;
+  }
+  .inline-travel-options{
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .travel-options-left{
+    margin-left: 0;
+    width: 100%;
+  }
+  .travel-options-right{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .moreflightbtn a, #next-step.enabled, #next-step-2.enabled, #ch_submit, .reglog, .continue_btn{
+    padding: 16px 32px;
+  }
+}
+@media (max-width: 768px){
+  .inline-travel-options{
+    margin-right: 0;
+  }
+  .inline-travel-options li{
+    margin: 0;
+  }
+  .travel-options{
+    padding: 0 1rem 1rem;
+  }
+}
+@media screen and (max-width:463px) {
+  .sec-nav>ul.step-1 {
+    background: transparent;
+    margin:15px 0px;
+  }
+}
+@media screen and (max-width: 380px){
+  .sec-nav>ul>li a {
+      padding: 12px 24px;
+  }
+  .sec-nav>ul.step-1{
+    margin-bottom: 30px;
+  }
+}
