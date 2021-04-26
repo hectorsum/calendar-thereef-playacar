@@ -35,6 +35,9 @@
 }
 
 @media (max-width: 1200px){
+  .travel-options-left ul.inline-travel-options li input, .travel-options-left ul.inline-travel-options li>strong, .travel-options-left ul.inline-travel-options li>div{
+    min-width: 30%;
+  }
   .sec-nav{
     margin-top: 25px;
   }
